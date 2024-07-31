@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Complete Responsive Food Website Design Tutorial</title>
+
+        <!-- font awesome cdn link -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+         <!-- custom css file link -->
+        <link rel="stylesheet" href="style.css">
+
+        <link  rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+
+        
+
+</head>
+<body>
+
+    <!-- header section start----------------------------------------------------------- -->
+
+    <header>
+        <a href="#" class="logo"><i class="fa-solid fa-utensils"></i>      resto.</a>
+
+        <nav class="navbar">
+                <a class="active" href="#home">home</a>
+                <a href="#dishes">dishes</a>
+                <a href="#about"> about</a>
+                <a href="#menu">menu</a>
+                <a href="#review">review</a>
+                <a href="#order">order</a>
+        </nav>
+
+        <div class="icons">
+            <i class="fas fa-bars" id="menu-bars"></i>
+            <i class="fas fa-search" id="search-icon"></i>
+            <a href="#" class="fa fa-heart"></a>  
+            <a href="#" class="fas fa-shopping-cart" ></a>
+            
+        </div>
+
+        </header>
+
+
+
+     <!-- header section end----------------------------------------------------------- -->
+
+        <!-- search form-------------------------------------- -->
+
+        <form action="" id="search-form">
+            <input type="search" placeholder="Search here..." id="search-box">
+            <label for="search-box" class="fas fa-search"></label>
+            <i class="fas fa-times" id="close"></i>
+        </form>
+
+
+        <!-- home section start -->
+
+        <section class="home" id="home">
+
+            <div class="swiper mySwiper home-slider">
+                <div class="swiper-wrapper wrapper">
+                    <div class="swiper-slide slide">
+                        <div class="content">
+                            <span>our  special dish</span>
+                            <h3>spicy noodles</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique vitae provident libero maxime? </p>
+                            <a href="#" class="btn">order Now</a>
+                        </div>
+                        <div class="image">
+                            <img src="sqr-1.png"  alt="">
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide slide">
+                        <div class="content">
+                            <span>our  special dish</span>
+                            <h3>fried Chicken</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique vitae provident libero maxime?</p>
+                            <a href="#" class="btn">order Now</a>
+                        </div>
+                        <div class="image">
+                            <img src="sqr-2.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide slide">
+                        <div class="content">
+                            <span>our  special dish</span>
+                            <h3>hot pizza</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique vitae provident libero maxime? </p>
+                            <a href="#" class="btn">order Now</a>
+                        </div>
+                        <div class="image">
+                            <img src="sqr-3.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+
+        </section>
+
+
+          <!-- home section end -->
+
+          <!-- dish section start -->
+        
+<section class="dishes" id="dishes">
+
+
+          <h3 class="sub-heading">Our Dishes</h3>
+          <h1 class="heading">Popular Dishesh</h1>
+
+          <div class="nav">
+
+            <a href="#" class="logo">
+              <ion-icon name="fast-food"></ion-icon>
+              Food Delight
+            </a>
+      
+            <div class="box">
+              <div class="cart-count">0</div>
+              <ion-icon name="cart"  id="cart-icon" ></ion-icon>
+              
+            </div>
+      
+            <div class="cart">
+              <div class="cart-title">Cart Items </div>
+              
+              <div class="cart-content">
+
+                <!--
+          <div class="cart-box">
+            <img src="images/97.jpg" class="cart-img">
+            <div class="detail-box">
+              <div class="cart-food-title">Special Dosai</div>
+              <div class="price-box">
+                <div class="cart-price">Rs.72</div>
+                 <div class="cart-amt">Rs.72</div>
+             </div>
+              <input type="number" value="1" class="cart-quantity">
+            </div>
+            <ion-icon name="trash" class="cart-remove"></ion-icon>
+          </div>
+
+          <div class="cart-box">
+            <img src="images/97.jpg" class="cart-img">
+            <div class="detail-box">
+              <div class="cart-food-title">Special Dosai</div>
+              <div class="price-box">
+                <div class="cart-price">Rs.72</div>
+                 <div class="cart-amt">Rs.72</div>
+             </div>
+              <input type="number" value="1" class="cart-quantity">
+            </div>
+            <ion-icon name="trash" class="cart-remove"></ion-icon>
+          </div>
+        -->
+                
+            </div>
+              
+            <div class="total">
+              <div class="total-title">Total</div>
+              <div class="total-price">Rs.0</div>
+            </div>
+            
+            <button class="btn-buy">Place Order</button>
+      
+            <ion-icon name="close" class="what" id="cart-close"></ion-icon>
+      
+            </div>
+          </div>
+
+          <div class="container">
+            <!-- <h2 class="title">Discover the Best Food</h2> -->
+            <div class="shop-content">
+        
+        
+              <div class="food-box">
+                <div class="pic">
+                  <img src="sqr-1.png" class="food-img">
+                </div>
+                <h2 class="food-title">Plain</h2>
+                <span class="food-price">Rs.40</span>
+                <ion-icon name="cart" class="add-cart"></ion-icon>
+              </div>
+        
+        
+              <div class="food-box">
+                <div class="pic"><img src="sqr-2.png" class="food-img"></div>
+                <h2 class="food-title">Paper Roast</h2>
+                <span class="food-price">Rs.65</span>
+                <ion-icon name="cart" class="add-cart"></ion-icon>
+              </div>
+          
+              <div class="food-box">
+                <div class="pic"><img src="sqr-3.png" class="food-img"></div>
+                <h2 class="food-title">Onion Roast</h2>
+                <span class="food-price">Rs.80</span>
+                <ion-icon name="cart" class="add-cart"></ion-icon>
+              </div>
+          
+              <div class="food-box">
+                <div class="pic"><img src="sqr-4.png" class="food-img"></div>
+                <h2 class="food-title">Egg Parotta</h2>
+                <span class="food-price">Rs.55</span>
+                <ion-icon name="cart" class="add-cart"></ion-icon>
+              </div>
+          
+              <div class="food-box">
+                <div class="pic"><img src="sqr-6.png" class="food-img"></div>
+                <h2 class="food-title">Plain Omelette</h2>
+                <span class="food-price">Rs.25</span>
+                <ion-icon name="cart" class="add-cart"></ion-icon>
+              </div>
+          
+              <div class="food-box">
+                <div class="pic"><img src="popular-sushi-rolls.png" class="food-img"></div>
+                <h2 class="food-title">Kadai Fry</h2>
+                <span class="food-price">Rs.150</span>
+                <ion-icon name="cart" class="add-cart"></ion-icon>
+              </div>
+          
+          
+              <div class="food-box">
+                <div class="pic"><img src="sqr-8.png" class="food-img"></div>
+                <h2 class="food-title">Egg Veechu</h2>
+                <span class="food-price">Rs.65</span>
+                <ion-icon name="cart" class="add-cart"></ion-icon>
+              </div>
+          
+          
+              <div class="food-box">
+                <div class="pic"><img src="popular-spring-rols.png" class="food-img"></div>
+                <h2 class="food-title">Egg Roast</h2>
+                <span class="food-price">Rs.65</span>
+                <ion-icon name="cart" class="add-cart"></ion-icon>
+              </div>
+          
+        
+        
+        
+        
+            </div>
+          </div>
+
+         
+           <!-- dish section end -->
+
+
+           <!-- About section start_____________________________________ -->
+
+
+          
+
+           <section class="about" id="about">
+
+            <h3 class="sub-heading">About Us </h3>
+            <h1 class="heading">Why Choose Me?</h1>
+
+            <div class="row">
+              <div class="image">
+                <img src="sqr-55.png" alt="">
+              </div>
+
+              <div class="content">
+                <h3>Best Food in the country</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis rerum quis distinctio aut recusandae. Eius neque labore commodi, illum architecto quam quisquam at, laborum blanditiis accusantium odit soluta consequuntur mollitia.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus maxime, minima pariatur architecto culpa accusamus consequatur omnis aspernatur, temporibus illo cumque distinctio iure esse qui iste vitae ipsa ut sapiente.</p>
+                
+                <div class="icons-container">
+                  <div class="icons">
+                    <i class="fa-solid fa-cart-flatbed"></i>
+                    <span>Free Delivery</span>
+                  </div>
+
+                <div class="icons">
+                    <i class="fa-solid fa-dollar-sign"></i>
+                    <span>Easy Payment</span>
+                </div>
+
+                <div class="icons">
+                    <i class="fa-solid fa-headset"></i>
+                    <span>27/4 services</span>
+                </div>
+              </div>
+
+                <a href="#" class="btn">learn More</a>
+              </div>
+              
+            </div>
+
+          </section>
+         <!-- About section end_____________________________________ -->
+
+         <!-- menu section start -->
+       <section class="menu" id="menu">
+          <h3 class="sub-heading">Our Menu</h3>
+          <h1 class="heading">today's Speciality</h1>   
+          
+          <div class="main-container">
+            <div class="part-1">
+              <div class="sub">
+                <img src="sqr-1.png" alt="">
+                <div>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                </div>
+                <h1>Delicious Food</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. kjhewed kjhdewm f liaihwois jkehrjkd </p>
+              </div>
+              <div class="anger">
+                <a href="#" class="btn">Add cart</a>
+                <p>$12.99</p>
+              </div>  
+            </div>
+
+            <div class="part-1">
+              <div class="sub">
+                <img src="sqr-1.png" alt="">
+                <div>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                </div>
+                <h1>Delicious Food</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.  kjhewed kjhdewm f liaihwois jkehrjkd </p>
+              </div>
+              <div class="anger">
+                <a href="#" class="btn">Add cart</a>
+                <p>$12.99</p>
+              </div>  
+            </div>
+
+            <div class="part-1">
+              <div class="sub">
+                <img src="sqr-1.png" alt="">
+                <div>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                </div>
+                <h1>Delicious Food</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.  kjhewed kjhdewm f liaihwois jkehrjkd </p>
+              </div>
+              <div class="anger">
+                <a href="#" class="btn">Add cart</a>
+                <p>$12.99</p>
+              </div>  
+            </div>
+          </div>
+
+          <div class="main-container2">
+            <div class="part-2">
+              <div class="sub">
+                <img src="sqr-1.png" alt="">
+                <div>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                </div>
+                <h1>Delicious Food</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. kjhewed kjhdewm f liaihwois jkehrjkd </p>
+              </div>
+              <div class="anger">
+                <a href="#" class="btn">Add cart</a>
+                <p>$12.99</p>
+              </div>  
+            </div>
+          
+
+          <div class="part-2">
+            <div class="sub">
+              <img src="sqr-1.png" alt="">
+              <div>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              </div>
+              <h1>Delicious Food</h1>
+              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.  kjhewed kjhdewm f liaihwois jkehrjkd </p>
+            </div>
+            <div class="anger">
+              <a href="#" class="btn">Add cart</a>
+              <p>$12.99</p>
+            </div>  
+          </div>
+        
+
+        <div class="part-2">
+          <div class="sub">
+            <img src="sqr-1.png" alt="">
+            <div>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            </div>
+            <h1>Delicious Food</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.  kjhewed kjhdewm f liaihwois jkehrjkd </p>
+          </div>
+          <div class="anger">
+            <a href="#" class="btn">Add cart</a>
+            <p>$12.99</p>
+          </div>  
+        </div>
+      </div>
+          </div>
+       </section>
+          
+       <!-- menu section end -->
+
+       <!-- review section start--------------------------------------- -->
+        <section class="review" id="review">
+          <h3 class="sub-heading">customer's review</h3>
+          <p class="heading">What they say</p>
+          
+          <div class="swiper-container review-slider">
+            <div class="swiper-wrapper">
+              
+              <div class="swiper-slide slide">
+                <i class="fa-solid fa-quote-right"></i>
+                <div class="user">
+                  <img src="sqr-6.png" alt="">
+                  <div class="user-info">
+                    <h3>Join deo</h3>
+                    <div class="stars">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      </div>
+                  </div>
+                </div>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum alias libero dolores magnam, molestias ea cupiditate officia omnis vitae facere eum veniam eaque hic possimus adipisci consectetur porro optio ipsa.</p>
+
+              </div>
+
+              <div class="swiper-slide slide">
+                <i class="fa-solid fa-quote-right"></i>
+                <div class="user">
+                  <img src="sqr-6.png" alt="">
+                  <div class="user-info">
+                    <h3>Join deo</h3>
+                    <div class="stars">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      </div>
+                  </div>
+                </div>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum alias libero dolores magnam, molestias ea cupiditate officia omnis vitae facere eum veniam eaque hic possimus adipisci consectetur porro optio ipsa.</p>
+
+              </div>
+
+              <div class="swiper-slide slide">
+                <i class="fa-solid fa-quote-right"></i>
+                <div class="user">
+                  <img src="sqr-6.png" alt="">
+                  <div class="user-info">
+                    <h3>Join deo</h3>
+                    <div class="stars">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      </div>
+                  </div>
+                </div>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum alias libero dolores magnam, molestias ea cupiditate officia omnis vitae facere eum veniam eaque hic possimus adipisci consectetur porro optio ipsa.</p>
+
+              </div>
+
+              <div class="swiper-slide slide">
+                <i class="fa-solid fa-quote-right"></i>
+                <div class="user">
+                  <img src="sqr-6.png" alt="">
+                  <div class="user-info">
+                    <h3>Join deo</h3>
+                    <div class="stars">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      </div>
+                  </div>
+                </div>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum alias libero dolores magnam, molestias ea cupiditate officia omnis vitae facere eum veniam eaque hic possimus adipisci consectetur porro optio ipsa.</p>
+
+              </div>
+            </div>
+          </div>
+        </section>
+       <!-- review section start--------------------------------------- -->
+
+       <!-- order section start------------------------------ -->
+
+       
+        <section class="order" id="order">
+
+          <h3 class="sub-heading">customer's review</h3>
+          <h1 class="heading">What they say</h1>
+          <div class="order-page">
+          <div class="O-left">
+            <div>
+              <p>Your Name</p>
+              <input type="text" placeholder="enter your name">
+            </div>
+            <div>
+              <p>Your Order</p>
+              <input type="text" placeholder="enter food name">
+            </div>
+            <div>
+              <p>how Much</p>
+              <input type="number" placeholder="How Many Orders">
+            </div>
+            <div>
+              <p>Your address</p>
+              <textarea name="" id="" cols="30" rows="10"></textarea>
+            </div>
+          </div>
+          
+
+          <div class="O-left">
+            <div>
+              <p>Your number</p>
+              <input type="number" placeholder="enter your name">
+            </div>
+            <div>
+              <p>Additional Food</p>
+              <input type="text" placeholder="enter food name">
+            </div>
+            <div>
+              <p>Date and time</p>
+              <input type="datetime-local" placeholder="enter your name">
+            </div>
+            <div>
+              <p>Your Message</p>
+              <textarea name="" id="" cols="30" rows="10"></textarea>
+            </div>
+          </div>
+        </div>
+        <div class="click">
+         <input type="submit" value="Order Now" class="btn">
+        </div>
+        </section>
+       <!-- order section end------------------------------ -->
+
+
+          
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+    <script>
+        let menu = document.querySelector('#menu-bars');
+        let navbar = document.querySelector('.navbar');
+
+        menu.onclick = ()=> {
+        menu.classList.toggle('fa-times');
+        navbar.classList.toggle('active');
+}
+
+        window.onscroll = ()=> {
+        menu.classList.remove('fa-times');
+        navbar.classList.remove('active');
+}
+
+    document.querySelector('#search-icon').onclick = ()=>
+{
+     document.querySelector('#search-form').classList.toggle('active');
+}
+
+    document.querySelector('#close').onclick = ()=>
+{
+     document.querySelector('#search-form').classList.remove('active');
+}
+
+
+// slide-----------------------------------
+
+// var swiper = new Swiper(".home-slider", {
+//       spaceBetween: 30,
+//       centeredSlides: true,
+//       autoplay: {
+//         delay: 2500,
+//         disableOnInteraction: false,
+//       },
+//       pagination: {
+//         el: ".swiper-pagination",
+//         clickable: true,
+//       },
+//       loop:true,
+//     });
+
+//     var swiper = new Swiper(".review-slider", {
+//       spaceBetween: 30,
+//       centeredSlides: true,
+//       autoplay: {
+//         delay: 2500,
+//         disableOnInteraction: false,
+//       },
+//       loop:true,
+//       breakpoints:{
+//         0:{
+//           slidesPerview: 1,
+//         },
+//         640:{
+//           slidesPerview: 2,
+//         },
+//         768:{
+//           slidesPerview: 2,
+//         },
+//         1024:{
+//           slidesPerview: 3,
+//         },
+//       },
+
+//     });
+
+// dish section start-----------------------------
+
+const btnCart=document.querySelector('#cart-icon');
+const cart=document.querySelector('.cart');
+const btnClose=document.querySelector('#cart-close');
+
+btnCart.addEventListener('click',()=>{
+  cart.classList.add('cart-active');
+});
+
+btnClose.addEventListener('click',()=>{
+  cart.classList.remove('cart-active');
+});
+
+document.addEventListener('DOMContentLoaded',loadFood);
+
+function loadFood(){
+  loadContent();
+
+}
+
+function loadContent(){
+  //Remove Food Items  From Cart
+  let btnRemove=document.querySelectorAll('.cart-remove');
+  btnRemove.forEach((btn)=>{
+    btn.addEventListener('click',removeItem);
+  });
+
+  //Product Item Change Event
+  let qtyElements=document.querySelectorAll('.cart-quantity');
+  qtyElements.forEach((input)=>{
+    input.addEventListener('change',changeQty);
+  });
+
+  //Product Cart
+  
+  let cartBtns=document.querySelectorAll('.add-cart');
+  cartBtns.forEach((btn)=>{
+    btn.addEventListener('click',addCart);
+  });
+
+  updateTotal();
+}
+
+
+//Remove Item
+function removeItem(){
+  if(confirm('Are Your Sure to Remove')){
+    let title=this.parentElement.querySelector('.cart-food-title').innerHTML;
+    itemList=itemList.filter(el=>el.title!=title);
+    this.parentElement.remove();
+    loadContent();
+  }
+}
+
+//Change Quantity
+function changeQty(){
+  if(isNaN(this.value) || this.value<1){
+    this.value=1;
+  }
+  loadContent();
+}
+
+let itemList=[];
+
+//Add Cart
+function addCart(){
+ let food=this.parentElement;
+ let title=food.querySelector('.food-title').innerHTML;
+ let price=food.querySelector('.food-price').innerHTML;
+ let imgSrc=food.querySelector('.food-img').src;
+ //console.log(title,price,imgSrc);
+ 
+ let newProduct={title,price,imgSrc}
+
+ //Check Product already Exist in Cart
+ if(itemList.find((el)=>el.title==newProduct.title)){
+  alert("Product Already added in Cart");
+  return;
+ }else{
+  itemList.push(newProduct);
+ }
+
+
+let newProductElement= createCartProduct(title,price,imgSrc);
+let element=document.createElement('div');
+element.innerHTML=newProductElement;
+let cartBasket=document.querySelector('.cart-content');
+cartBasket.append(element);
+loadContent();
+}
+
+
+function createCartProduct(title,price,imgSrc){
+
+  return `
+  <div class="cart-box">
+  <img src="${imgSrc}" class="cart-img">
+  <div class="detail-box">
+    <div class="cart-food-title">${title}</div>
+    <div class="price-box">
+      <div class="cart-price">${price}</div>
+       <div class="cart-amt">${price}</div>
+   </div>
+    <input type="number" value="1" class="cart-quantity">
+  </div>
+  <ion-icon name="trash" class="cart-remove"></ion-icon>
+</div>
+  `;
+}
+
+function updateTotal()
+{
+  const cartItems=document.querySelectorAll('.cart-box');
+  const totalValue=document.querySelector('.total-price');
+
+  let total=0;
+
+  cartItems.forEach(product=>{
+    let priceElement=product.querySelector('.cart-price');
+    let price=parseFloat(priceElement.innerHTML.replace("Rs.",""));
+    let qty=product.querySelector('.cart-quantity').value;
+    total+=(price*qty);
+    product.querySelector('.cart-amt').innerText="Rs."+(price*qty);
+
+  });
+
+  totalValue.innerHTML='Rs.'+total;
+
+
+  // Add Product Count in Cart Icon
+
+  const cartCount=document.querySelector('.cart-count');
+  let count=itemList.length;
+  cartCount.innerHTML=count;
+
+  if(count==0){
+    cartCount.style.display='none';
+  }else{
+    cartCount.style.display='block';
+  }
+
+
+}
+
+
+// dish section end---------------------------------
+
+
+
+
+    </script>
+</html>
